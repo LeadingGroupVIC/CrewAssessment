@@ -6,7 +6,7 @@
   <title>Civil Construction Employee Survey</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-white to-blue-50 flex items-center justify-center p-6">
+<body class="min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 flex items-center justify-center p-6">
   <div class="w-full max-w-3xl bg-white shadow-lg rounded-2xl p-8">
     <h1 class="text-2xl font-bold text-blue-800 mb-6">Civil Construction Employee Survey</h1>
     <form class="space-y-6">
@@ -14,7 +14,8 @@
       <!-- 1. Job Satisfaction -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">1. How satisfied are you with the type of work you do each day?</label>
-        <select name="job_satisfaction" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="job_satisfaction" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Very satisfied</option>
           <option>Satisfied</option>
           <option>Mostly satisfied</option>
@@ -25,7 +26,8 @@
       <!-- 2. Teamwork -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">2. How well do you feel your crew works together on site?</label>
-        <select name="teamwork" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="teamwork" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Extremely well</option>
           <option>Very well</option>
           <option>Well</option>
@@ -36,7 +38,8 @@
       <!-- 3. Supervisor Support -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">3. How supported do you feel by your leading hand or supervisor?</label>
-        <select name="supervisor_support" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="supervisor_support" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Always supported</option>
           <option>Usually supported</option>
           <option>Sometimes supported</option>
@@ -47,7 +50,8 @@
       <!-- 4. Safety -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">4. How would you rate the safety measures on your site?</label>
-        <select name="safety" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="safety" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Excellent</option>
           <option>Very good</option>
           <option>Good</option>
@@ -58,7 +62,8 @@
       <!-- 5. Communication -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">5. How clear are instructions from supervisors and leading hands?</label>
-        <select name="communication" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="communication" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Always clear</option>
           <option>Usually clear</option>
           <option>Mostly clear</option>
@@ -69,7 +74,8 @@
       <!-- 6. Training -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">6. How useful have training or toolbox talks been in helping you do your job?</label>
-        <select name="training" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="training" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Very useful</option>
           <option>Useful</option>
           <option>Somewhat useful</option>
@@ -80,7 +86,8 @@
       <!-- 7. Equipment -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">7. How reliable is the machinery and equipment you use?</label>
-        <select name="equipment" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="equipment" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Always reliable</option>
           <option>Mostly reliable</option>
           <option>Reliable</option>
@@ -91,7 +98,8 @@
       <!-- 8. Recognition -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">8. How often do you feel your work is recognised and appreciated?</label>
-        <select name="recognition" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="recognition" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Always</option>
           <option>Often</option>
           <option>Sometimes</option>
@@ -102,7 +110,8 @@
       <!-- 9. Workload -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">9. How manageable is your workload on most days?</label>
-        <select name="workload" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="workload" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Very manageable</option>
           <option>Manageable</option>
           <option>Mostly manageable</option>
@@ -113,7 +122,8 @@
       <!-- 10. Company improvements -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">10. Since starting here, how much better has the company become in looking after workers?</label>
-        <select name="company_improvements" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="company_improvements" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Much better</option>
           <option>Better</option>
           <option>Slightly better</option>
@@ -124,7 +134,8 @@
       <!-- 11. Pride -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">11. How proud are you to be part of the projects the company delivers?</label>
-        <select name="pride" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+        <select name="pride" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
+          <option value="" disabled selected>Select an option</option>
           <option>Extremely proud</option>
           <option>Very proud</option>
           <option>Proud</option>
@@ -135,7 +146,13 @@
       <!-- 12. Open Question -->
       <div>
         <label class="block text-blue-900 font-semibold mb-2">12. What’s one thing you enjoy most about working here?</label>
-        <textarea name="positive_feedback" rows="3" class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200"></textarea>
+        <textarea name="positive_feedback" rows="3" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200"></textarea>
+      </div>
+
+      <!-- 13. Name -->
+      <div>
+        <label class="block text-blue-900 font-semibold mb-2">13. Your Name</label>
+        <input type="text" name="employee_name" required class="w-full p-3 bg-[#f3f9ff] rounded-xl border border-blue-200">
       </div>
 
       <!-- Submit -->
